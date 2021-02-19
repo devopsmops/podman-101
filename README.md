@@ -14,29 +14,80 @@
 <br>
 
 ## Что такое Podman?
-Podman: A tool for managing OCI containers and pods
+Podman - это консольная утилита для запуска OCI containers and pods (поэтому он PODman :) )
+<br>
+Можно рассматривать Podman как Daemonless Docker.
 
-Podman - Pod manager tools
+## Установка Podman
+Podman так же как Docker поддерживает установку на разных ОС (Windows, Linux, macOS)
+https://podman.io/getting-started/installation
 
-Можно считать его Daemonless Docker и даже сделать алиас
+## Базовые команды
+
+Команды Podman основаны на командах Docker. На оффициальном сайте даже предлагаю сделать алиас:
 ```
 alias docker=podman
 ```
 
-OCI Containers
-
+Не уверен, что это хорошая идея, так как оба слова одинаковой длинны :)
 <br>
 
-## Установка Podman
-Так же как Docker поддерживает установку для разных ОС - 
-https://podman.io/getting-started/installation
-
+И если делать алиас, то сокращать так сокращать
+```
+alias p=podman
+```
 <br>
 
-## Базовые команды
-
+Посмотреть версию
+```
 podman version
+```
+<br>
 
+Вывести подробную информацию о конфигурации
+```
+podman info
+```
+<br>
+
+Загрузить образ в репозиторий
+```
 podman pull
+```
+<br>
 
-podman ls
+Загрузить образ из репозитория
+```
+podman push
+```
+<br>
+
+Загрузить список запущенный контейнеров
+```
+podman ps
+```
+<br>
+
+Вывести список контейнеров, запущенных другими Container runtime
+```
+podman ps --sync --external --all
+```
+<br>
+
+Запустить контейнер
+```
+podman run -d busybox sleep 3600
+```
+<br>
+
+Остановить контейнер
+```
+podman stop --latest
+```
+<br>
+
+Вывести список загруженных образов
+```
+podman images
+```
+<br>
