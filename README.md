@@ -5,9 +5,8 @@
 
 # Podman - Быстый старт
 Присоединяйтесь к нам - [Youtube](https://www.youtube.com/channel/UCqC3c7UHtwoX2wy7fdHc6gg) и [Telegram](https://t.me/devops_mops)
-<br>
 
-**Содержание**
+## Содержание
 - [Что такое Podman?](#Что-такое-Podman?)
 - [Установка Podman](#Установка-Podman)
 - [Базовые команды](#Базовые-команды)
