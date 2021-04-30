@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-<img src="files/static/logoPodman.png" width="200" height ="200" />
+<img src="logo.png" width="200" height ="200" />
 <br><br>
 
 # Podman - Быстый старт
